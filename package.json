@@ -1,0 +1,30 @@
+{
+  "name": "mikrotik-mobile-app",
+  "private": true,
+  "version": "1.0.0",
+  "main": "app/app.ts",
+  "scripts": {
+    "android": "ns run android",
+    "ios": "ns run ios",
+    "preview": "ns preview",
+    "build:android": "ns build android --release --key-store-path my-release-key.keystore --key-store-password android --key-store-alias android --key-store-alias-password android --aab --copy-to mikrotik-app.apk"
+  },
+  "dependencies": {
+    "@nativescript/core": "~8.6.0",
+    "@nativescript/theme": "~3.0.2",
+    "@nativescript/react": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.6.0",
+    "@nativescript/types": "~8.6.0",
+    "@nativescript/webpack": "~5.0.18",
+    "@types/react": "^18.3.5",
+    "typescript": "^5.5.3"
+  },
+  "nativescript": {
+    "id": "org.nativescript.mikrotikmobileapp",
+    "templateVersion": "v8"
+  }
+}
